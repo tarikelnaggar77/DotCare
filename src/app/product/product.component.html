@@ -1,0 +1,74 @@
+<div class="container-fluid">
+    <h5>Product</h5>
+</div>
+<form class="container-fluid mx-2 py-2" style="background-color: rgb(255, 255, 255); ">
+    <div class="form-group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="cyan" class="bi bi-files"
+            viewBox="0 0 16 16">
+            <path
+                d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z" />
+        </svg>&nbsp;
+        <label style="color:rgb(43, 57, 101);">Basic Information</label>
+        <hr class="solid" style="margin-top: -3px;">
+    </div>
+    <div class="form-group row">
+        <div class="form-group col-sm-4">
+            <label style="color:rgb(61, 81, 142);">Warehouse</label>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group col-sm-4">
+            <label style="color:rgb(61, 81, 142);">Type</label>
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="col-sm-4 mt-5 px-1">
+            <input type="checkbox" [(ngModel)]="customCheck1" name="customCheck1"> &nbsp;
+            <label for="customCheck1">Show Zero Balance</label>
+        </div>
+        <div class="form-group col-sm-4">
+            <label style="color:rgb(61, 81, 142);">Product Classifications</label>
+            <br>
+            <div class="custom-control custom-radio custom-control-inline mx-4">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">All Product</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline mx-4">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Specific Product</label>
+            </div>
+        </div>
+        <div class="form-group col-sm-6" *ngIf="customCheck1">
+            <label style="color:rgb(61, 81, 142);">Product</label>
+            <select class="form-control">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+            </select>
+        </div>
+    </div>
+    <div class="container-fluid" style="text-align: right;">
+        <button type="submit" class="btn btn-primary"
+            style="background-color: rgb(0, 230, 230) !important; border-style: none;">Search</button>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="cyan" class="bi bi-files" viewBox="0 0 16 16">
+        <path
+            d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z" />
+    </svg>&nbsp;
+    <label style="color:rgb(43, 57, 101);">Product Details</label>
+    <hr class="solid" style="margin-top: -3px;">
+</form>

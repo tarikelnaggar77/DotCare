@@ -1,0 +1,24 @@
+.main-content {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar{
+    height: 50px !important;
+    border-radius: 15px 15px 15px 15px;
+    background-color: rgb(61, 81, 142);
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 30px;
+    border-style: none;
+    background-color: rgb(228, 241, 253);
+}
