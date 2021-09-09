@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  customCheck1: boolean;
-
+  type: number;
+  options: boolean;
+  warehouse: boolean;
   constructor() {
   }
 
