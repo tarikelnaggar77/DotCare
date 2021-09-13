@@ -80,13 +80,11 @@ export class ProductComponent implements AfterViewInit {
       console.log(x)
       if (x == 0) {
         this.myForm.get("types").disable();
-        console.log(this.myForm.value)
       }
       if (x == 1) {
         this.myForm.get("types").enable()
         this.types = this.types1;
         this.myForm.get("types").setValue(0);
-        console.log(this.myForm.value)
 
       }
       if (x == 2) {
@@ -94,7 +92,6 @@ export class ProductComponent implements AfterViewInit {
         this.types = this.types2;
         this.myForm.get("types").setValue(0);
 
-        console.log(this.myForm.value)
 
       }
     })
@@ -122,6 +119,8 @@ export class ProductComponent implements AfterViewInit {
     this.products.push(event.option.viewValue);
     this.productInput.nativeElement.value = '';
     this.productCtrl.setValue(null);
+    console.log(this.productCtrl.value)
+
   }
 
   private _filter(value: string): string[] {
@@ -134,13 +133,14 @@ export class ProductComponent implements AfterViewInit {
   }
 
   showValues() {
-    console.log(this.productCtrl.value)
     if (this.myForm.get("product").value == 1) {
       this.dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
     }
     else {
-      const result = ELEMENT_DATA.filter(s => s.product.includes(this.myForm.get("productCtrl").value)
+      const result = ELEMENT_DATA.filter(s => s.product.includes(this.products.toString())
       );
+      console.log(result);
+
       this.dataSource = new MatTableDataSource<Element>(result);
     }
   }
