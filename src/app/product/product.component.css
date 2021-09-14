@@ -6,3 +6,20 @@
 .mat-elevation-z8 {
     width: 100% !important;
   }
+
+  .notValid {
+      border-color:  rgb(211, 0, 0);
+  }
+
+  .notValid2{ 
+      color: rgb(211, 0, 0) !important;
+  }
+
+  ::ng-deep .mat-form-field-infix{
+    padding: 0px !important;
+    margin-left: 0px;
+  }
+
+  ::ng-deep .mat-form-field-can-float {
+      padding-left: 2px;
+  }

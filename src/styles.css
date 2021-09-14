@@ -289,8 +289,10 @@
   }
 
   body {
-    min-height: 1680px;
     background-color: rgb(236, 240, 255);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
   }
 
   footer{
@@ -299,6 +301,7 @@
     border-radius: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: auto;
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
